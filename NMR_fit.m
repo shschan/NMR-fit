@@ -2,8 +2,8 @@
 % To baseline and fit a 1D 19F pulse-acquire NMR spectrum
 % For more details, see Chan et al, Nat Chem 2022
 
-load data.txt;   % convert test.ft1 file to data.txt using the following command:
-                %            pipe2txt.tcl -index ppm test.ft1>data.txt
+load data.txt;   % process test.fid using nmrproc.com (ensure baselining at e.g. -70 and -50 ppm) and 
+                %  convert test.ft1 file to data.txt using the following command: pipe2txt.tcl -index ppm test.ft1>data.txt
 
 
 NS = 10* 1024;   % number of experiments summed times the NS for each experiment
